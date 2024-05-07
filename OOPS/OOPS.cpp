@@ -2,26 +2,24 @@
 using namespace std;
 
 class mahasiswa {
-
 public:
 	int nim;
 	void showNim() {
-		cout << "No Induk = " << nim << endl:
+		cout << "No Induk = " << nim << endl;
 	}
 };
 
 int main() {
 
-	mahasiswa mhs{ 1 }; // 
-	mhs.showNim(); //Member Access Operator
+	mahasiswa mhs{ 1 }; //object mhs
+	mhs.showNim(); //member access operator
 
-	mahasiswa& showNim(); //object mhs
-	refMhs.nim = 2; // Member access operator
+	mahasiswa& refMhs = mhs; // pointer reference pMhs
+	refMhs.nim = 2; //member access operator
 	mhs.showNim();
 
-	Mahasiwa* reMhs = mhs; //pointer reference refMhs
-	pMhs->nim 3; //Arrow operator
+	mahasiswa* pMhs = &mhs; //pointer deference pMhs
+	pMhs->nim = 3; //arrow operator
 	pMhs->showNim();
 	return 0;
-
-	
+}
